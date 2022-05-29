@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f3fd40da-d3a8-4015-827a-0d4515113f38</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="Paramore.Brighter" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.Extensions.DependencyInjection" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.MessagingGateway.RMQ" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.ServiceActivator" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.ServiceActivator.Extensions.DependencyInjection" Version="9.1.2" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrighterTest.Message\BrighterTest.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Paramore.Brighter.MessagingGateway.RMQ">
+      <HintPath>..\..\..\..\Visual Studio\Nuget\paramore.brighter.messaginggateway.rmq\9.1.2\lib\netstandard2.0\Paramore.Brighter.MessagingGateway.RMQ.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

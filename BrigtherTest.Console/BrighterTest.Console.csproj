@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Paramore.Brighter" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.Extensions.DependencyInjection" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.MessagingGateway.RMQ" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.ServiceActivator" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.ServiceActivator.Extensions.DependencyInjection" Version="9.1.2" />
+    <PackageReference Include="Paramore.Brighter.ServiceActivator.Extensions.Hosting" Version="9.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrighterTest.Message\BrighterTest.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Hosting">
+      <HintPath>..\..\..\..\Visual Studio\Nuget\microsoft.extensions.hosting\6.0.1\lib\net6.0\Microsoft.Extensions.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+      <HintPath>C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.5\ref\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Paramore.Brighter">
+      <HintPath>..\..\..\..\Visual Studio\Nuget\paramore.brighter\9.1.2\lib\netstandard2.0\Paramore.Brighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Paramore.Brighter.MessagingGateway.RMQ">
+      <HintPath>..\..\..\..\Visual Studio\Nuget\paramore.brighter.messaginggateway.rmq\9.1.2\lib\netstandard2.0\Paramore.Brighter.MessagingGateway.RMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="Paramore.Brighter.ServiceActivator.Extensions.DependencyInjection">
+      <HintPath>..\..\..\..\Visual Studio\Nuget\paramore.brighter.serviceactivator.extensions.dependencyinjection\9.1.2\lib\netstandard2.0\Paramore.Brighter.ServiceActivator.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
